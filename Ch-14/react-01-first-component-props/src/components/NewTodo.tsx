@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 
+import "./NewTodo.css";
+
 // Set type for incoming function in props from App.tsx
 // type is the same as interface
 type NewTodoProps = {
@@ -21,7 +23,7 @@ const NewTodo: React.FC<NewTodoProps> = (props) => {
 
   return (
     <form onSubmit={todoSubmitHandler}>
-      <div>
+      <div className="form-control">
         <label htmlFor="todo-text">Todo Text</label>
         <input type="text" id="todo-text" ref={textInputRef} />
         <button type="submit">ADD TODO</button>

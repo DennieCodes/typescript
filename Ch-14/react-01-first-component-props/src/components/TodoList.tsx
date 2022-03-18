@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./TodoList.css";
+
 // Typescript describing props for this component which is an array of objects
 // with id: string, and text: string
 interface TodoListProps {
