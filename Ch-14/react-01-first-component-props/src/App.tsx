@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Route } from "react-router-dom";
+
 import TodoList from "./components/TodoList";
 import NewTodo from "./components/NewTodo";
-import { Todo } from "./todo.model";
+import { Todo } from "./todo.model";  
 
 const App: React.FC = () => {
   // Set state using Todo model object to set type
